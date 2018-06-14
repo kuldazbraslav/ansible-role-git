@@ -47,7 +47,7 @@
 
 - name: Download git.
   get_url:
-    url: "https://www.kernel.org/pub/software/scm/git/git-{{ git_version }}.tar.gz"
+    url: "https://github.com/git/git/archive/v{{ git_version }}.tar.gz"
     dest: "{{ workspace }}/git-{{ git_version }}.tar.gz"
   when: (git_installed_version.rc != 0) or git_reinstall_from_source
   environment:
