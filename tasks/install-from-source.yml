@@ -50,8 +50,6 @@
     url: "https://github.com/git/git/archive/v{{ git_version }}.tar.gz"
     dest: "{{ workspace }}/git-{{ git_version }}.tar.gz"
   when: (git_installed_version.rc != 0) or git_reinstall_from_source
-  environment:
-    https_proxy: "{{ https_proxy }}"
 
 - name: Expand git archive.
   unarchive:
