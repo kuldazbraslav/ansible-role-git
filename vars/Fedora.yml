@@ -1,6 +1,5 @@
 ---
 git_install_from_source_dependencies:
-  - gettext-devel
   - expat-devel
   - curl-devel
   - zlib-devel
